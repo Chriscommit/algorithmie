@@ -1,5 +1,5 @@
-import { Node } from "./node.mjs";
-import { LinkedList } from "./linked_list.mjs";
+import { Node } from "../linked_list/node.mjs";
+import { LinkedList } from "../linked_list/linked_list.mjs";
 
 const linkedList = new LinkedList();
 
