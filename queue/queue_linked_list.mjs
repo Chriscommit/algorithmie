@@ -1,6 +1,6 @@
 // Implémenter une queue avec une liste chainée
 // Attention liste chaînée différente de la liste chaînée que nous avions implémentée
-import { Node } from '../linked_list/node.mjs'
+import { Node } from "../node.mjs";
 
 export class QueueLL {
   constructor() {
@@ -55,3 +55,19 @@ export class QueueLL {
     this.size = 0;
   }
 }
+
+const queueLL = new QueueLL();
+queueLL.enqueue(1);
+queueLL.enqueue(2);
+queueLL.enqueue(3);
+
+console.log(queueLL.peek());
+console.log(queueLL.dequeue());
+console.log(queueLL.getSize());
+console.log(queueLL.isEmpty());
+
+queueLL.enqueue(4);
+console.log(queueLL.dequeue());
+console.log(queueLL.dequeue());
+console.log(queueLL.dequeue());
+console.log(queueLL.isEmpty());
